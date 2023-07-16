@@ -368,9 +368,7 @@ FROM top_production_houses;
 
 --- Ans: A24:- 7 || Warner Bros. :- 6
 ----- Q5. Identify the top three actresses based on the number of Super Hit movies (average rating > 8) in the drama genre.
--- Query to identify the top three actresses based on the number of Super Hit movies (average rating > 8) in the drama genre
 
--- Step 1: Get the Super Hit movies in the drama genre
 WITH super_hit_drama_movies AS (
     SELECT m.id AS movie_id, m.title, r.avg_rating
     FROM movie m
@@ -475,7 +473,21 @@ Sion Sono			4			125.5				2972
 Özgür Bakar			4			93.5				1092
 Sam Liu				4			78					28557
 */
+----------------------------------------------------------------------------------------------------------------------------------------------------
+/*  Segment 7: Recommendations
+Based on the analysis, provide recommendations for the types of content Bolly Movies should focus on producing.
+*/
+/* Ans: Based on the Analysis of the IMBd Movies, the recommendations for the types of content Bolly Movies should focus on producing is:-
 
+          1. The 'Triller' genre has caught the highest attention and interest amongst the audience as the amount of 'Thriller' movies watched is good,
+	         so the Bollywood movie production houses should keep their interest towards producing more 'Thriller' genre movies. 
+       
+          2. The 'Drama' genre has gained the overall average highest IMDb rating by the audience, so the Bollywood movies production houses 
+             should focus more on producing quality content movies in the 'Drama' genre as they have been doing.
+       
+          3. The Bollywood movie production houses should also focus on producing good quality movies in other genres as well for the 
+             growth of the bollywood movie industry.
+*/
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ------- Extra Questions:
 ----- Q1. Determine the average duration of movies released by Bolly Movies compared to the industry average.
